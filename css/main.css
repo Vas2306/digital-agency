@@ -1,0 +1,21 @@
+:root{
+    --bgc-frame: #F6F6F6;
+}
+.bgc1{
+    background-color: var(--bgc-frame);
+}
+.companies ul{
+    width: 780px;
+}
+/* .companies ul>li:first-child{
+    width: 150px;
+}
+.companies ul>li:nth-child(2) {
+    width: 121px;
+}
+.companies ul>li:nth-child(3) {
+    width: 163px;
+} */
+/* .companies ul>li:last-child{
+    width: 98px;
+} */
