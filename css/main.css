@@ -7,10 +7,16 @@
 .companies ul{
     width: 780px;
 }
-/* .companies ul>li:first-child{
+.users .card-body>div{
+    width: 129px;
+}
+.accordion-button{
+    font-size: 22px;
+}
+/* .companies ul>li:firulst-child{
     width: 150px;
 }
-.companies ul>li:nth-child(2) {
+.companies >li:nth-child(2) {
     width: 121px;
 }
 .companies ul>li:nth-child(3) {
