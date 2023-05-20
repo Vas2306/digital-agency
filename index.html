@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <title>Digital Agency</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/sketchy/bootstrap.min.css"
@@ -39,13 +38,31 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">about</a>
+                    <a class="nav-link" href="#about">about</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >testimonials</a
+                    >
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#Andrew">Andrew Rathore</a>
+                      <a class="dropdown-item" href="#Vera">Vera Duncan</a>
+                      <a class="dropdown-item" href="#Mark">Mark Smith</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#Read"
+                        >Read What Other have to Say</a
+                      >
+                    </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">testimonials</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                    <a class="nav-link" href="#contact">contact</a>
                   </li>
                 </ul>
               </div>
@@ -70,6 +87,10 @@
               <button
                 type="button"
                 class="btn btn-info btn-lg text-uppercase mt-lg-5"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                id="contact"
               >
                 Contact Us
               </button>
@@ -82,10 +103,12 @@
       </div>
     </section>
 
-    <section class="pb-5 py-lg-5 companies">
+    <section class="pb-5 py-lg-5 companies mx-2">
       <div class="container">
         <div class="row">
-          <h4 class="mb-3 mb-lg-5 text-center">Trusted by 4,000+ companies</h4>
+          <h4 id="partners" class="mb-3 mb-lg-5 text-center">
+            Trusted by 4,000+ companies
+          </h4>
 
           <ul class="list-group list-group-flush d-flex flex-row gap-2 mx-auto">
             <li class="list-group-item d-flex align-items-center px-lg-5">
@@ -114,7 +137,7 @@
           <div class="col-lg-6 px-lg-5">
             <div class="card border-primary mb-3">
               <div class="card-header py-3"></div>
-              <div class="card-body">
+              <div class="card-body" id="about">
                 <h2 class="card-title display-6">Branding & Design system</h2>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
@@ -186,7 +209,7 @@
       <div class="container">
         <div class="row">
           <p class="text-center">TESTIMONIALS</p>
-          <h2 class="text-center display-6 pb-4">
+          <h2 class="text-center display-6 pb-4" id="Read">
             Read What Other <br />
             have to Say
           </h2>
@@ -194,7 +217,9 @@
             <div class="col-lg-4 col-sm-12">
               <div class="card border-primary mb-3">
                 <div class="card-header">
-                  <h4 class="card-title text-center">Andrew Rathore</h4>
+                  <h4 class="card-title text-center" id="Andrew">
+                    Andrew Rathore
+                  </h4>
                 </div>
                 <div class="card-body">
                   <div class="my-4 mx-auto">
@@ -213,7 +238,7 @@
             <div class="col-lg-4 col-sm-12">
               <div class="card border-primary mb-3">
                 <div class="card-header">
-                  <h4 class="card-title text-center">Vera Duncan</h4>
+                  <h4 class="card-title text-center" id="Vera">Vera Duncan</h4>
                 </div>
                 <div class="card-body">
                   <div class="my-4 mx-auto">
@@ -233,7 +258,7 @@
             <div class="col-lg-4 col-sm-12">
               <div class="card border-primary mb-3">
                 <div class="card-header">
-                  <h4 class="card-title text-center">Mark Smith</h4>
+                  <h4 class="card-title text-center" id="Mark">Mark Smith</h4>
                 </div>
                 <div class="card-body">
                   <div class="my-4 mx-auto">
@@ -255,55 +280,266 @@
     </section>
 
     <section class="py-5">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 d-lg-block d-none mx-auto">
-<img class="img-fluid" src="images/komputer-min.png" alt="">
-    </div>
-    <div class="col-lg-6 col-sm-12">
-<h2 class=" text-center mb-4">Be a part of the next big thing</h2>
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h3 class="accordion-header display-1" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Why should you work with us?
-      </button>
-    </h3>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, labore? Accusantium magnam veniam illum maxime? Debitis laboriosam iure eaque porro facilis, impedit blanditiis ut corrupti neque recusandae nobis, quas amet doloremque aspernatur. Quidem, corporis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, labore? Accusantium magnam veniam illum maxime? Debitis laboriosam iure eaque porro facilis. 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-lg-block d-none mx-auto">
+            <img class="img-fluid" src="images/komputer-min.png" alt="" />
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <h2 id="careers" class="text-center mb-4">
+              Be a part of the next big thing
+            </h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h3 class="accordion-header display-1" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Why should you work with us?
+                  </button>
+                </h3>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A,
+                    labore? Accusantium magnam veniam illum maxime? Debitis
+                    laboriosam iure eaque porro facilis, impedit blanditiis ut
+                    corrupti neque recusandae nobis, quas amet doloremque
+                    aspernatur. Quidem, corporis? Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. A, labore? Accusantium magnam
+                    veniam illum maxime? Debitis laboriosam iure eaque porro
+                    facilis.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="display-1 accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What do we offer?
+                  </button>
+                </h3>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur nulla omnis sint, deserunt vel delectus,
+                    pariatur, laborum et illo aliquam quasi excepturi officiis
+                    ipsum atque natus inventore dolorum tempora repudiandae odit
+                    cumque hic! Magnam, impedit!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    What experience will you get?
+                  </button>
+                </h3>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit quis delectus culpa, sed assumenda architecto natus
+                    possimus obcaecati quae molestiae exercitationem cumque
+                    error ducimus, vero repellat ullam iusto. Delectus, nostrum
+                    veniam!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h3 class="display-1 accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-       What do we offer?
-      </button>
-    </h3>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nulla omnis sint, deserunt vel delectus, pariatur, laborum et illo aliquam quasi excepturi officiis ipsum atque natus inventore dolorum tempora repudiandae odit cumque hic! Magnam, impedit!   
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h3 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        What experience will you get?
-      </button>
-    </h3>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quis delectus culpa, sed assumenda architecto natus possimus obcaecati quae molestiae exercitationem cumque error ducimus, vero repellat ullam iusto. Delectus, nostrum veniam! 
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
     </section>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row gap-3 d-flex justify-content-center mx-1">
+          <div class="card border-primary mb-3 col-lg-3 p-0">
+            <div class="card-header">
+              <h4 class="card-title">Digital Agency</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="card-text">
+                  <a href="">Building digital products,</a>
+                </li>
+                <li class="card-text">
+                  <a href="">Brands &#38; experience</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card border-primary mb-3 col-lg-2 p-0">
+            <div class="card-header"><h4 class="card-title">Resources</h4></div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="card-text">
+                  <a href="">Guides</a>
+                </li>
+                <li class="card-text">
+                  <a href="">Blog</a>
+                </li>
+                <li class="card-text">
+                  <a href="">Customer Stories</a>
+                </li>
+
+                <li class="card-text">
+                  <a href="">Glossery</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card border-primary mb-3 col-lg-2 p-0">
+            <div class="card-header"><h4 class="card-title">Company</h4></div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="card-text">
+                  <a href="#about">About Us</a>
+                </li>
+                <li class="card-text">
+                  <a href="#careers">Careers</a>
+                </li>
+                <li class="card-text">
+                  <a href="#partners">Partners</a>
+                </li>
+                <li class="card-text">
+                  <a href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card border-primary mb-3 col-lg-3 p-0">
+            <div class="card-header">
+              <h4 class="card-title">Social Media</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="card-text">
+                  <a href="https://www.google.com/">LinkedIn</a>
+                </li>
+                <li class="card-text">
+                  <a href="https://www.facebook.com/">Facebook</a>
+                </li>
+                <li class="card-text">
+                  <a href="https://www.instagram.com/">Instagram</a>
+                </li>
+                <li class="card-text">
+                  <a href="https://twitter.com/">Twitter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-5 text-center">&#169; Matheus. Todos os direitos reservados</p>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">CONTACT US</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="exampleInputName1" class="form-label mt-4"
+                >Name</label
+              >
+              <input
+                type="name"
+                name="name"
+                class="form-control"
+                id="exampleInputName1"
+                placeholder="Petrov Ivan"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label mt-4"
+                >Email address</label
+              >
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="pertov_ivan@gmail.com"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="form-label mt-4"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
